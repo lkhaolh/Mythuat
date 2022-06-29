@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tong{
+			width: 1100px;
+			height: 615px;
+			/*background: red;*/
+		}
+		#sanho{
+			width: 20%;
+			height: 100%;
+			background: black;
+			position: relative;
+			float: left;
+		}
+		#mau{
+			width: 4%;
+			height: 100%;
+			background-image: url(./images/soc.jpg);
+			position: relative;
+			float: left;
+		}
+		#chu{
+			width: 56%;
+			height: 100%;
+			/*background: purple;*/
+			float: left;
+			position: relative;
+			background-image: url(./images/sua1.gif);
+			z-index: 99;
+			background-position: 15px 150px;
+			background-repeat: no-repeat;
+		}
+		#chu >.phia_tren{
+			width: 100%;
+			height: 20%;
+			/*background: purple;*/
+			float: left;
+		}
+		#chu >.phia_duoi{
+			width: 60%;
+			height: 80%;
+			background: seagreen;
+			float: left;
+			position: absolute;
+			left: 70px;
+			top: 120px;
+		}
+		#hinh{
+			width: 20%;
+			height: 100%;
+			position: relative;
+			z-index: 99;
+			left: 30px;
+			top: 30px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div id="sanho">
+			<img src="./images/sanho.gif" style="position: absolute; z-index: 99">
+		</div>
+		<div id="mau"></div>
+		<div id="chu">
+			<div class="phia_tren">
+			<b><font size="15" color="pink">THAM GIA CLB</font></b>
+				<br>
+				<br>
+				<span> Quý độc giả hãy điền đầy đủ thông tin để phát triển Câu lạc bộ 
+					<br>càng ngày càng vững mạnh hơn.</span>
+					<br>
+					<br>
+				</div>
+				<div class="phia_duoi">
+			<table>
+				<form>
+				<tr>
+					<td class="text">Họ và tên:</td>
+					<td><input type="text">*</td>
+				</tr>
+				<tr>
+					<td class="text">Địa chỉ:</td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td class="text">Email:</td>
+					<td><input type="text">*</td>
+				</tr>
+				<tr>
+					<td class="text">Điện thoại:</td>
+					<td><input type="nunber">*</td>
+				</tr>
+				<tr>
+					<td class="text">Ngày sinh</td>
+					<td><input type="date">*</td>
+				</tr>
+				<tr>
+					<td class="text">Đề tài</td>
+					<td><select>
+						<option>
+							Tìm hiểu Sứa biển
+						</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="text">Nhóm:</td>
+					<td>
+                            <input type="radio" name="nhom" >Nghiên cứu<br>
+                            <input type="radio" name="nhom">Hải Ngư<br>
+                            <input type="radio" name="nhom">Viễn dương<br>
+                            <input type="radio" name="nhom">Mỹ thuật<br>
+                            <input type="radio" name="nhom">Thực phẩm<br>
+                            <input type="radio" name="nhom">Sinh viên<br>
+                        </td>
+				</tr>
+				<tr>
+					<td class="text">Gởi hình:</td>
+					<td>
+						<input type="text" size="30">
+						<input type="file" id="actual-btn" hidden/>
+						<label for="actual-btn"><button>Browse...</button></label>
+					</td>
+				</tr>
+				<tr>
+					<td class="text">Tài liệu:</td>
+					<td>
+						<input type="checkbox">Sinh vật Biển<br>
+						<input type="checkbox">Các loài Sứa biển<br>
+						<input type="checkbox">
+						San hô<br>
+						<input type="checkbox">
+						Môi trường Biển<br>
+						<input type="checkbox">
+						Khí hậu
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button type="submit">Tham gia</button>
+						<button type="reset">Xóa thông tin</button>
+					</td>
+				</tr>
+				</form>
+			</table>
+			</div>				 	
+		</div>
+		<div id="hinh">
+			<img src="./images/nhom1a.jpg"><br>
+			<img src="./images/nhom1b.jpg"><br>
+			<img src="./images/nhom1c.jpg"><br>
+			<img src="./images/nhom1d.jpg"><br>
+		</div>
+	</div>
+</body>
+</html>
